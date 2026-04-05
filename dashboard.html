@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EDUPERMITPRO - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+
+<header>
+    <h1>EDUPERMITPRO</h1>
+</header>
+
+<div class="dashboard-container">
+
+    <!-- LEFT PANEL -->
+    <div class="panel left-panel">
+        <h2>Eligibility Verification</h2>
+
+        <div class="form-group">
+            <label>Attendance Percentage</label>
+            <input type="number" id="attendance" min="0" max="100">
+        </div>
+
+        <div class="form-group">
+            <label>Type of Leave</label>
+            <select id="leaveType">
+                <option>General Leave</option>
+                <option>Medical Leave</option>
+                <option>On Duty</option>
+                <option>Event Participation</option>
+            </select>
+        </div>
+        
+
+        <div class="form-group">
+            <label>Number of Days</label>
+            <input type="number" id="days">
+        </div>
+
+        <div class="form-group">
+            <label>From Date</label>
+            <input type="date" id="fromDate">
+        </div>
+
+        <div class="form-group">
+            <label>To Date</label>
+            <input type="date" id="toDate">
+        </div>
+
+        <button onclick="verifyEligibility()" class="primary-btn">
+            Verify Eligibility
+        </button>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="panel right-panel">
+
+        <div id="statusBox" class="status-box">
+            Status will appear here
+        </div>
+        
+
+        <div id="details" class="details-box"></div>
+
+        <div class="btn-group">
+            <button onclick="generatePDF()" class="success-btn">
+                Download Leave Application
+            </button>
+
+            <button onclick="clearAll()" class="danger-btn">
+                Clear & Logout
+            </button>
+        </div>
+<div id="studentInfo"></div>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

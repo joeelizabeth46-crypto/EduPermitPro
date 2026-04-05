@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* LOGIN PAGE */
+
+.login-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1f4e79, #2d89ef);
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    color: #1f4e79;
+}
+
+.tagline {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: gray;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+}
+
+.input-group label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: gray;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -10px;
+    font-size: 12px;
+    color: #2d89ef;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #2d89ef;
+    color: white;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* DASHBOARD */
+
+.dashboard-body {
+    background: #f4f6f9;
+}
+
+header {
+    background: #1f4e79;
+    color: white;
+    padding: 15px 30px;
+}
+
+.dashboard-container {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+
+.panel {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.status-box {
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.approved {
+    background: #d4edda;
+    color: #155724;
+}
+
+.warning {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.rejected {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.details-box {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.success-btn {
+    flex: 1;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.danger-btn {
+    flex: 1;
+    padding: 10px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
