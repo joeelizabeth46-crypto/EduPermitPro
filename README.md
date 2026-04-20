@@ -1,4 +1,4 @@
-# 📘 EDUPERMITPRO  
+# 📘 EDUPERMITPRO 
 ### College Permission & Leave Management System  
 
 EDUPERMITPRO is a web-based application designed to simplify and automate the student leave request process in educational institutions. It replaces traditional manual methods with a digital system that improves efficiency, transparency, and record management.
